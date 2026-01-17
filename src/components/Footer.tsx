@@ -1,5 +1,5 @@
 import React from 'react';
-import { Settings, Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -10,7 +10,11 @@ export const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-[#1BA3C7] rounded-full flex items-center justify-center">
-                <Settings className="w-6 h-6 text-white" />
+                <img
+                  src="https://res.cloudinary.com/doalvffjs/image/upload/v1764616195/ChatGPT_Image_Dec_2__2025__12_35_09_AM-removebg-preview_ulwqbo.png"
+                  alt="UniqueSpark Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold">UniqueSpark</h3>
