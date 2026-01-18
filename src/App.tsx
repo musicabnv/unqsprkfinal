@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import { ContactModalProvider, useContactModal } from './contexts/ContactModalContext';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
@@ -64,6 +65,7 @@ function App() {
     <Router>
       <ContactModalProvider>
         <AppContent />
+        <Analytics />
       </ContactModalProvider>
     </Router>
   );
